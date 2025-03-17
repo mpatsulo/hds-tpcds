@@ -1,4 +1,4 @@
- TABLE tpcds.call_center (
+CREATE TABLE tpcds.call_center (
     cc_call_center_sk integer,
     cc_call_center_id character varying(16),
     cc_rec_start_date date,
@@ -30,4 +30,4 @@
     cc_country character varying(20),
     cc_gmt_offset numeric(5,2),
     cc_tax_percentage numeric(5,2)
-)
+    )
