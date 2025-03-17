@@ -4,6 +4,6 @@ for i in *.dat; do
     echo "Loading $table..."
     psql  << EOF
     TRUNCATE TABLE $table;
-    \COPY $table FROM 'hd-tpcds/$i' WITH (FORMAT csv, DELIMITER '|');
+    \COPY $table FROM 'hds-tpcds/$i' WITH (FORMAT csv, DELIMITER '|');
 EOF
 done
